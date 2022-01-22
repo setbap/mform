@@ -1,0 +1,32 @@
+<p>three works!</p>
+<form [formGroup]="myForm" class="todo-form">
+	<div class="card-root">
+		<div class="card">
+			{{myForm.get('form1').getRawValue()??{} | json}}
+		</div>
+
+		<div class="card">
+			<app-form [formGroupName]="'form1'"></app-form>
+		</div>
+	</div>
+	<div class="card-root">
+		<div class="card">
+
+			{{myForm.get('form2').getRawValue()??{} | json}}
+
+		</div>
+		<div class="card">
+			<app-form formGroupName="form2"></app-form>
+		</div>
+	</div>
+</form>
+
+
+<!-- <label for="name">
+			name:
+			<input type="text" id="name" formControlName="name" /></label>
+		<br /><br />
+		<label for="lastname">
+			lastname:
+			<input type="text" id="lastname" formControlName="lastname" /></label>
+		</form> -->
