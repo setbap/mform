@@ -6,9 +6,16 @@ import { AppComponent } from './app.component';
 import { OneComponent } from './pages/one/one.component';
 import { TwoComponent } from './pages/two/two.component';
 import { FormComponent } from './component/form/form.component';
+import { FormComponent as FormComponent2 } from './component/form2/form.component';
 
 @NgModule({
-	declarations: [AppComponent, OneComponent, TwoComponent, FormComponent],
+	declarations: [
+		AppComponent,
+		OneComponent,
+		TwoComponent,
+		FormComponent,
+		FormComponent2,
+	],
 	imports: [BrowserModule, FormsModule, ReactiveFormsModule, AppRoutingModule],
 	providers: [],
 
